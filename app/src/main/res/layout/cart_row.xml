@@ -1,0 +1,83 @@
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#000"
+                        android:id="@+id/dishname_field"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Dish" />
+
+                    <Button
+                        android:id="@+id/minus_field"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:background="@color/cast_intro_overlay_button_background_color"
+                        android:text="-"
+                        android:textColor="#FFFF" />
+
+                    <TextView
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:id="@+id/amount_field"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:inputType="textPersonName" />
+
+                    <Button
+                        android:id="@+id/plus_field"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/cast_intro_overlay_button_background_color"
+                        android:text="+"
+                        android:textColor="#FFFF" />
+
+                    <TextView
+                        android:textColor="#000"
+                        android:id="@+id/price_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:text="Price" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

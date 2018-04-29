@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dishField"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corners"
+                        android:ems="10"
+                        android:hint="Dish"
+                        android:inputType="textCapSentences|textPersonName"
+                        android:padding="13dp"
+                        android:textColor="#808080"
+                        android:textColorHint="#808080"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/descriptionField"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_corners"
+                                android:fontFamily="sans-serif"
+                                android:gravity="top|left"
+                                android:hint="Description"
+                                android:maxLength="99"
+                                android:minLines="6"
+                                android:padding="13dp"
+                                android:textColor="#808080"
+                                android:textColorHint="#808080"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+                    </android.support.v4.widget.NestedScrollView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.76"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <Button
+                                android:id="@+id/period"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="#FFF"
+                                android:background="@drawable/rounded_corners_blue"
+                                android:text="P/Q"/>
+
+
+                            <EditText
+                                android:layout_weight="1"
+                                android:id="@+id/price"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@drawable/rounded_corners"
+                                android:ems="10"
+                                android:fontFamily="sans-serif"
+                                android:hint="Price"
+                                android:inputType="number"
+                                android:padding="13dp"
+                                android:textColor="#808080"
+                                android:textColorHint="#808080"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0"
+                                android:text="kr"
+                                android:textColor="#FFF"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="13dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="#FFF"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/periodText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Button
+
+                            android:id="@+id/allergies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_corners_blue"
+                            android:text="Allergens"
+                            android:textColor="#FFF" />
+
+                        <android.support.v4.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/allerg_list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp" />
+
+                            </LinearLayout>
+                        </android.support.v4.widget.NestedScrollView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="15dp"
+                                    android:text="Choose picture" />
+
+                                <ImageView
+                                    android:id="@+id/result_image"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@drawable/image_selector"
+                                    android:minHeight="150dp"
+                                    android:minWidth="200dp"
+                                    android:padding="5dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@mipmap/default_image" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/choose_picture_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Please choose a picture"
+                    android:textColor="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/show_dish_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"/>
+                <Button
+                    android:visibility="gone"
+                    android:text="x"
+                    android:background="@drawable/removetag"
+                    android:id="@+id/delete_picture"
+                    android:layout_height="20dp"
+                    android:layout_width="20dp">
+                </Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/contentSubmit"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#33b5e5"
+        android:text="Post"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

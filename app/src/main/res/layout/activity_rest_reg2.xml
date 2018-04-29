@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rest_reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.jasim.plateup.registration.RestReg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                android:layout_margin="10dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:id="@+id/back_button"
+                android:background="@drawable/ic_keyboard_backspace_white_24dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:id="@+id/linearLayout3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Info"
+                    android:textSize="25dp"
+                    android:textColor="#FFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2" />
+                <EditText
+                    android:text="21689207"
+                    android:textColorHint="#FFF"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/r_telephone"
+                    android:hint="Telephone"
+                    android:inputType="phone" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:text="22"
+                        android:textColorHint="#FFF"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="291dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:ems="10"
+                        android:id="@+id/bank_account"
+                        android:hint="Bank account" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        app:fabSize="mini"
+                        app:srcCompat="@drawable/ic_info_outline_white_24dp"
+                        android:id="@+id/info_bank"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/address_btn"
+                    android:layout_marginTop="25dp"
+                    android:text="Address"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/address_info"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textColorHint="#FFF"
+                        android:fontFamily="sans-serif"
+                        android:ems="10"
+                        android:id="@+id/rest_address" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:textColorHint="#FFF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/postal_field"
+                            android:layout_weight="1"
+                            android:inputType="numberSigned" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/country_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:paddingRight="4dp"
+                        android:text="Accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/terms"
+                        android:layout_toEndOf="@+id/checkBox"
+                        android:textColor="#FFF"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/textView10" />
+                    <TextView
+                        android:text="Terms and Policy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/terms"
+                        android:layout_alignBaseline="@+id/checkBox"
+                        android:layout_alignBottom="@+id/checkBox"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#FFF"
+                        android:fontFamily="sans-serif" />
+
+
+                    <CheckBox
+                        android:checked="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox"
+                        android:layout_below="@+id/repeat_field"
+                        android:layout_toEndOf="@+id/terms" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/next_button"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="Next"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>

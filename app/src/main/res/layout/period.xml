@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity" />
+
+            <EditText
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/quantityField"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/rounded_corners"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="13dp"
+                android:padding="7dp"
+                android:inputType="number"
+                android:textColor="#808080"
+                android:textColorHint="#808080"
+                android:textSize="14dp" />
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnFixed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fixed days" />
+
+        <Spinner
+            android:padding="5dp"
+            style="@style/SpinnerAsEditText"
+            android:visibility="gone"
+            android:id="@+id/fixedField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btnPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Campaign days" />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:visibility="gone"
+            android:id="@+id/periodField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ok" />
+    </LinearLayout>
+
+</LinearLayout>

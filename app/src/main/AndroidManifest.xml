@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jasim.plateup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".PlateUP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDyzR8VRCBtCqXae0pNRECF9pyXT9tIpC8" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".PostContent"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EditContent"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".registration.MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".registration.LostPasswordActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".registration.UserReg"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".registration.UserReg2"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".registration.RestReg"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".registration.RestReg2"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".registration.RestReg3"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".registration.RestReg4"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".settings.SettingsUser"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".settings.SettingsUserInside"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".settings.SettingsUserProfile"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".YourOrders"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MainUActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Eatit"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Restaurant"
+            android:label="@string/title_activity_restaurant"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Categories"
+            android:label="@string/title_activity_categories"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfileRestaurant"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".CompleteOrder"
+            android:label="@string/title_activity_complete_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainRActivity"
+            android:label="@string/title_activity_main_r"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PastOrdersActivity"
+            android:label="PastOrders"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".settings.SettingsAuthActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".settings.SettingsRest"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".settings.SettingsRestInside"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".settings.SettingsRestPass"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".settings.SettingsRestBank"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".settings.SettingsRestOpening"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".bookings.BookingActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".bookings.Booking2Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".bookings.MyRestaurantBookingsActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".bookings.MyBookingsUser"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".StartActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaitingActivity"
+            android:label="@string/title_activity_waiting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TimerAcitivity"
+            android:label="@string/title_activity_timer_acitivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".BaseSampleActivity" />
+        <activity
+            android:name=".EarningsActivity"
+            android:label="@string/title_activity_earnings"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".notification.NotificationPublisher" />
+
+        <service
+            android:name=".notification.FirebaseNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:id="@+id/relative01">
+    <include layout="@layout/showdishes"
+        android:visibility="gone"
+        android:id="@+id/show_dishes">
+    </include>
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dip">
+        <Button
+            android:id="@+id/back_button2"
+            android:layout_margin="10dp"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/ic_keyboard_backspace_white_24dp"/>
+        <TextView
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Cart"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="56dip"
+        android:id="@+id/show_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/rest_name_cart"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:id="@+id/basketList" />
+            <Button
+                android:visibility="gone"
+                android:id="@+id/add_more_cart"
+                android:layout_margin="10dp"
+                android:text="Add more"
+                android:background="@drawable/rounded_corners_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0">
+
+                    <TextView
+                        android:text="Total    = "
+                        android:textColor="#FFFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView15"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:elevation="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="#FFFF"
+                        android:textSize="16dp"
+                        android:padding="8dip"
+                        android:id="@+id/total_price"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="0" />
+
+                    <Button
+                        android:id="@+id/order_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/shape"
+                        android:text="Next"
+                        android:textColor="#FFF"></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

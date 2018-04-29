@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/new_orders"
+            app:actionLayout="@layout/show_waiting_time"
+            android:title="New orders" />
+        <item
+            android:id="@+id/waiting_time"
+            app:actionLayout="@layout/show_waiting_time"
+            android:title="Waiting time" />
+        <item
+            android:id="@+id/open_close"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Busy? Close the restaurant" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/menupper">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Profile" />
+       <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Past orders" />
+        <item
+            android:id="@+id/nav_earnings"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="earnings" />
+        <!--<item
+            android:id="@+id/nav_bookings"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Bookings" />-->
+    </group>
+    <group
+        android:id="@+id/menusettings"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Logout" />
+    </group>
+
+</menu>

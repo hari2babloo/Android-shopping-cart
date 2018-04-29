@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_user_reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jasim.plateup.registration.UserReg2">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_margin="10dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:id="@+id/back_button"
+            android:background="@drawable/ic_keyboard_backspace_white_24dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:text="Eater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="30dp"
+            android:textColor="#FFF"
+            android:gravity="center"
+
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:fontFamily="sans-serif"
+            android:ems="10"
+            android:id="@+id/email_field"
+            android:hint="Email" />
+
+        <EditText
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif"
+            android:ems="10"
+            android:id="@+id/password_field"
+            android:hint="Password" />
+
+        <EditText
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="sans"
+            android:ems="10"
+            android:id="@+id/repeat_field"
+            android:hint="Repeat password" />
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Terms and Policy "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/terms"
+                android:layout_alignBaseline="@+id/checkBox"
+                android:layout_alignBottom="@+id/checkBox"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:textColor="#FFF"
+                android:fontFamily="sans-serif" />
+
+            <TextView
+                android:gravity="right"
+                android:text="Accept "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/terms"
+                android:layout_toEndOf="@+id/checkBox"
+                android:textColor="#FFF"
+                android:fontFamily="sans-serif"
+                android:layout_weight="1"/>
+
+            <CheckBox
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox"
+                android:layout_below="@+id/repeat_field"
+                android:layout_toEndOf="@+id/terms" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0">
+
+                <Button
+                    android:id="@+id/register_eater"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:text="Register eater"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

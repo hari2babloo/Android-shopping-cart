@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings_rest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jasim.plateup.settings.SettingsRest"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/colorPrimary">
+
+
+        <Button
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:id="@+id/back_button"
+            android:layout_weight="0.08"
+            android:background="@drawable/ic_keyboard_backspace_white_24dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:text="Settings"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Restaurant settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:id="@+id/rest_settings"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape"
+            />
+
+        <Button
+            android:text="Change password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rest_password"
+            android:textColor="#FFF"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:text="bank account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rest_bank"
+            android:textColor="#FFF"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:text="Opening settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rest_profile"
+            android:textColor="#FFF"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:text="add employees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:textColor="#FFF"
+            android:background="@drawable/shape"/>
+
+    </LinearLayout>
+</RelativeLayout>

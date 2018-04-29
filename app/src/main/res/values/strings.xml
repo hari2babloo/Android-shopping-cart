@@ -1,0 +1,346 @@
+<resources>
+    <string name="app_name">PlateUP</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="category">Categories</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="x"><b>x</b></string>
+    <string name="default_notification_channel_id">plateup_1</string>
+
+
+    <!-- Strings related to Settings -->
+
+
+    <string name="pick_image_intent_text">Select photo from gallery or take a picture</string>
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string-array name="days_array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+
+    <string-array name="hours">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+
+    </string-array>
+
+    <string-array name="minutes">
+        <item>00</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+
+
+    </string-array>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">PlateUp</string>
+    <string name="title_activity_main3">Main3Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">PlateUP</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_restaurant">Restaurant</string>
+    <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_restaurant_info">RestaurantInfo</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_profile_restaurant">ProfileRestaurant</string>
+    <string name="title_activity_complete_order">You have ordered</string>
+    <string name="title_activity_main_r">MainRActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_settings_rest">Settings</string>
+    <string name="title_activity_booking">Book a table</string>
+
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_waiting">WaitingActivity</string>
+    <string name="title_activity_timer_acitivity">TimerAcitivity</string>
+    <string name="title_activity_settings_opening">SettingsOpening</string>
+
+    <string name="colors">Colors</string>
+    <string name="titles_labels">Titles and Labels</string>
+    <string name="provide_text">Provide a text</string>
+    <string name="dialog_title">Dialog Title</string>
+    <string name="progress_text">Progress Text </string>
+    <string name="cancel_text">Cancel Button Text</string>
+    <string name="camera_button_text">Camera Button Text</string>
+    <string name="gallery_button_text">Gallery Button Text</string>
+    <string name="background_color">Dialog Background Color</string>
+    <string name="title_color">Dialog Title Color</string>
+    <string name="button_text_color">Buttons Text Color</string>
+    <string name="cancel_text_color">Cancel Text Color</string>
+    <string name="progress_text_color">Progress Text Color</string>
+
+    <string name="additional_customization">Additional Customization</string>
+    <string name="flip_image">Flip image after shot</string>
+    <string name="colored_icons">Colored icons</string>
+    <string name="max_image_size">Max image size</string>
+    <string name="dim_amount">Dim amount behind the dialog</string>
+    <string name="use_system_dialog">Use system dialog</string>
+    <string name="providers">Providers</string>
+    <string name="buttons_orientation">Buttons orientation</string>
+    <string name="icon_gravity">Icon gravity</string>
+    <string name="tip">Press on the box below to pick an image!</string>
+
+    <string name="key_text_preference_group">key_text_preference_group</string>
+    <string name="key_additional_preference_group">key_additional_preference_group</string>
+    <string name="key_dialog_title">key_dialog_title</string>
+    <string name="key_progress_text">key_progress_text</string>
+    <string name="key_cancel_text">key_cancel_text</string>
+    <string name="key_camera_button_text">key_camera_button_text</string>
+    <string name="key_gallery_button_text">key_gallery_button_text</string>
+    <string name="key_background_color">key_background_color</string>
+    <string name="key_title_color">key_title_color</string>
+    <string name="key_cancel_text_color">key_cancel_text_color</string>
+    <string name="key_button_text_color">key_button_text_color</string>
+    <string name="key_progress_text_color">key_progress_text_color</string>
+    <string name="key_flip_image">key_flip_image</string>
+    <string name="key_colored_icons">key_colored_icons</string>
+    <string name="key_dim_amount">key_dim_amount</string>
+    <string name="key_system_dialog">key_system_dialog</string>
+    <string name="key_max_image_size">key_max_image_size</string>
+    <string name="key_providers">key_providers</string>
+    <string name="key_buttons_orientation">key_buttons_orientation</string>
+    <string name="key_icon_gravity">key_icon_gravity</string>
+
+
+    <string-array name="pick_types_labels">
+        <item>Only Camera</item>
+        <item>Only Gallery</item>
+        <item>Camera and Gallery</item>
+    </string-array>
+
+    <string-array name="pick_types_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="orientation_labels">
+        <item>Vertical</item>
+        <item>Horizontal</item>
+    </string-array>
+
+    <string-array name="orientation_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="gravity_labels">
+        <item>Left</item>
+        <item>Top</item>
+        <item>Right</item>
+        <item>Bottom</item>
+    </string-array>
+
+    <string-array name="gravity_values">
+        <item>3</item>
+        <item>48</item>
+        <item>5</item>
+        <item>80</item>
+    </string-array>
+    <string name="title_activity_earnings">EarningsActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+</resources>

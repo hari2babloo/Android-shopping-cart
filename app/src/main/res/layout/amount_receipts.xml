@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/minus_field"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:background="@color/cast_intro_overlay_button_background_color"
+        android:text="-"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/amount_field"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/plus_field"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/cast_intro_overlay_button_background_color"
+        android:text="+"
+        android:textColor="#FFFF" />
+</LinearLayout>
